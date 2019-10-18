@@ -69,30 +69,6 @@ p {
     margin-left: -37px;
     z-index: 1;
 }
-.welcome-section .content-box .list li {
-    position: relative;
-    display: block;
-    background: #f4f3f0;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    color: #737879;
-    padding: 27px 20px 28px 66px;
-    margin-bottom: 10px;
-}
-.welcome-section .content-box .list li:before {
-    position: absolute;
-    content: "\f058";
-    font-family: 'Font Awesome 5 Free';
-    left: 30px;
-    top: 27px;
-    font-size: 16px;
-    color: #008391;
-    font-weight: 600;
-}
-.welcome-section .content-box .list li:last-child {
-    margin-bottom: 0px;
-}
 /********NavBar************/
 .MainPicDiv
 {
@@ -126,11 +102,9 @@ p {
 {
     font-style: italic;
     font-size: 40px;
-    color:#fc5185 !important;
 }
 .nav-link
 {
-    color: #000 !important;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;  
@@ -206,7 +180,7 @@ p {
         height: 200px;
         margin-top: -35px;
     }
-    .navbar
+    .navHidden
     {
         display: none;
     }
@@ -215,6 +189,113 @@ p {
         display: block;
     }
 
+}
+
+
+
+
+/*Showin Data page*/
+.section-margin-top
+{
+    margin-top: 70px;
+}
+.x
+{
+    color: #FFF;
+}
+.section-title h2 {
+    text-transform: capitalize;
+    margin-bottom: 70px;
+    font-weight: 600;
+    position: relative;
+    margin-top: 0;
+}
+
+.section-title h2::before {
+    position: absolute;
+    left: 50%;
+    top: 55px;
+    height: 2px;
+    width: 80px;
+    background: #207FDC;
+    content: "";
+    margin-left: -37px;
+    z-index: 1;
+}
+/********NavBar************/
+.MainPicDivDataPage
+{
+    background-color: #207FDC;
+    height: 300px ; 
+    background-size: 100% 100%;  
+    background-repeat:no-repeat ;
+    color: #FFF;       
+}
+.MainPicDivRequist
+{
+    height: 300px ;
+    background-color:#1bacc6;
+}
+
+
+/**Cotch Data**/
+.card
+{
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow:1px 1px 7px #333;
+}
+/******/
+/* Foteer*/
+.contact-area {
+    background: url(../img/cover.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.contact-area .section-title h2 {
+    color: #fff;
+}
+
+.contact-area .section-title p {
+    color: #fff;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form input[type='submit'] {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 25px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border: 1px solid #2c8ecc;
+    background: #2c8ecc;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contact-form input[type='submit']:hover {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #207FDC;
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 
 

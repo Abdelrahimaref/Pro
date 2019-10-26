@@ -28,7 +28,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title text-center">formconnect</a>
+                <a href="index.html" class="site_title text-center">formconnect</a>            
             </div>
 
             <div class="clearfix"></div>
@@ -83,7 +83,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/user.png" alt=""><span>Marco</span>
+                    <img src="images/user.png" alt=""><span> Marco</span>
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -158,142 +158,55 @@
         <!-- /top navigation -->
 
         <!-- page content -->
-        <div class="right_col" role="main" >
+        <div class="right_col" role="main">
           <div class="">
-            <div class="page-title">
-              <div class="title_left">
-                <h3> Liste des formations</h3>
-              </div>
 
-              <div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Go!</button>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
             <div class="clearfix"></div>
-
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Liste des formations </h2>
+                    <h2>Editer de la formation </h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
+                    <br />
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
-                    <!-- start project list -->
-                    <table class="table table-striped projects">
-                      <thead>
-                        <tr>
-                          <td style="width: 1%">#</td>
-                          <td style="width: 20%">Intitulé</td>
-                          <td>Dates début </td>
-                          <td>Dates fin</td>
-                          <td> Lieu</td>
-                          <td>Durée</td>
-                          <td style="width: 20%">réglage</td>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>
-                             Mathematics
-                          </td>
-                          <td>
-                                12-10 
-                          </td>
-                          <td>
-                              12-11
-                          </td>
-                          <td>paris</td>    
-                          
-                            <td>1 Month</td>
-                            <td>
-                            <a href="edit.html" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Éditer </a>
-                            <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Supprimer </a>
-                          </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>
-                               Mathematics
-                            </td>
-                            <td>
-                                  12-10 
-                            </td>
-                            <td>
-                                12-11
-                            </td>
-                            <td>paris</td>    
-                            
-                              <td>1 Month</td>
-                              <td>
-                              <a href="edit.html" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Éditer </a>
-                              <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Supprimer </a>
-                            </td>
-                          </tr>
-                          <tr>
-                              <td>3</td>
-                              <td>
-                                 Mathematics
-                              </td>
-                              <td>
-                                    12-10 
-                              </td>
-                              <td>
-                                  12-11
-                              </td>
-                              <td>paris</td>    
-                              
-                                <td>1 Month</td>
-                                <td>
-                                <a href="edit.html" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Éditer </a>
-                                <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Supprimer </a>
-                              </td>
-                            </tr>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>
-                               Mathematics
-                            </td>
-                            <td>
-                                  12-10 
-                            </td>
-                            <td>
-                                12-11
-                            </td>
-                            <td>paris</td>    
-                            
-                              <td>1 Month</td>
-                              <td>
-                              <a href="edit.html" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Éditer </a>
-                              <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Supprimer </a>
-                            </td>
-                          </tr>
-                        
-                      </tbody>
-                    </table>
-                    <!-- end project list -->
 
+                      <div class="form-group">
+                        <label for="oldpass" class="control-label col-md-3 col-sm-3 col-xs-12">Ancien mot de passe <span class="required">*</span> </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="oldpass" class="form-control col-md-7 col-xs-12" type="password" name="olpassword" required>
+                        </div>
+                      </div>
+                        <div class="form-group">
+                            <label for="newpass" class="control-label col-md-3 col-sm-3 col-xs-12">Nouveau mot de passe<span class="required">*</span> </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input id="newpass" class="form-control col-md-7 col-xs-12" type="password" name="newpassword" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="conpass" class="control-label col-md-3 col-sm-3 col-xs-12">Confirmez votre mot de passe<span class="required">*</span> </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input id="conpass" class="form-control col-md-7 col-xs-12" type="password" name="conpassword" required>
+                            </div>
+                        </div>
+                                                                                        
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                            <button type="submit" class="btn btn-success">Éditer</button>
+                        </div>
+                    </div>
+
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- /page content -->
 
-      </div>
-    </div>
+           
 
     <!-- jQuery -->
     <script src="vendors/jquery/dist/jquery.min.js"></script>
@@ -305,8 +218,31 @@
     <script src="vendors/nprogress/nprogress.js"></script>
     <!-- bootstrap-progressbar -->
     <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    
+    <!-- iCheck -->
+    <script src="vendors/iCheck/icheck.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="vendors/moment/min/moment.min.js"></script>
+    <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="vendors/google-code-prettify/src/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="vendors/select2/dist/js/select2.full.min.js"></script>
+    <!-- Parsley -->
+    <script src="vendors/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Autosize -->
+    <script src="vendors/autosize/dist/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <script src="vendors/starrr/dist/starrr.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="js/custom.js"></script>
+	
   </body>
 </html>
